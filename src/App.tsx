@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Difficulty, fetchQuizQuestions, QuestionState } from './API';
+import { GlobalStyle } from './App.styles';
 import QuestionCard from './components/QuestionCard';
 
 export type AnswerObject = {
@@ -66,6 +67,8 @@ function App() {
   }
 
   return (
+    <>
+    <GlobalStyle />
     <div className="App">
       <h1>React Quiz</h1>
 
@@ -95,6 +98,7 @@ function App() {
       ) : null }
       
     </div>
+    </>
   );
 }
 
