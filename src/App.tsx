@@ -55,7 +55,14 @@ function App() {
   }
 
   const nextQuestion = () => {
+    // Move on to tye next question if not the last question
+    const nextQuestion = number + 1
 
+    if (nextQuestion === TOTAL_QUESTIONS) {
+      setGameOver(true)
+    } else {
+      setNumber(nextQuestion)
+    }
   }
 
   return (
