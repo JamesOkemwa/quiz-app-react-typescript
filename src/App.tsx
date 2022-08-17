@@ -75,7 +75,7 @@ function App() {
           </button>
       ) : null}
 
-      { !gameOver && <p className="score">Score:</p> }
+      { !gameOver && <p className="score">Score: {score}</p> }
       
       { loading && <p>Loading Questions</p> }
 
